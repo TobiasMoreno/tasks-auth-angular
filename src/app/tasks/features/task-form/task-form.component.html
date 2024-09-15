@@ -1,0 +1,43 @@
+<div class="container">
+  <form
+    class="m-5 bg-dark p-4 rounded"
+    [formGroup]="form"
+    (ngSubmit)="submit()"
+  >
+    <h2 class="h2 text-center mb-3">New Task</h2>
+    <div data-mdb-input-init class="form-outline mb-4">
+      <label class="form-label" for="formtitle">Title</label>
+
+      <input
+        type="text"
+        id="formtitle"
+        class="form-control"
+        placeholder="Enter the title of the Task"
+        formControlName="title"
+      />
+    </div>
+
+    <div data-mdb-input-init class="form-check form-switch form-outline mb-4">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        role="switch"
+        id="completed"
+        formControlName="completed"
+      />
+      <label class="form-check-label" for="completed"
+        >Completed</label
+      >
+    </div>
+
+    <button
+      [disabled]="loading()"
+      type="submit"
+      data-mdb-button-init
+      data-mdb-ripple-init
+      class="btn btn-success mb-4"
+    >
+      {{loading() ? 'Saving...' : 'Add Task'}}
+    </button>
+  </form>
+</div>

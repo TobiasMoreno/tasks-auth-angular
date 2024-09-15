@@ -1,0 +1,6 @@
+@if (_taskService.loading()) {
+    <p>Loading tasks...</p>
+}@else {
+    <app-table [tasks]="tasks()" />
+    
+}
