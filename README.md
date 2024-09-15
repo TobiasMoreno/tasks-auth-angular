@@ -1,68 +1,74 @@
-# Proyecto Personal - Aplicación Web con Angular, Firebase y Manejo de Usuarios
+# Personal Project - Web Application with Angular and Firebase
 
-Este es un proyecto personal desarrollado con **Angular** como frontend y **Firebase** como base de datos en la nube. La aplicación es completamente **responsive**, automatizada y sigue buenas prácticas de desarrollo mediante el uso de **routeos**, **servicios (services)**, **características específicas (features)**, y **una interfaz de usuario moderna (UI)**.
+This is a personal project developed using **Angular** for the frontend and **Firebase** as the cloud database. The application is fully **responsive**, automated, and follows best practices by using **routing**, **services**, **features**, **authentication (Firebase Auth)**, and a modern **user interface (UI)**.
 
-## Características
+## Features
 
-- **Base de datos en la nube con Firebase**: Utilización de Firebase para gestionar y almacenar los datos de forma segura y eficiente.
-- **Frontend con Angular**: La aplicación está desarrollada en Angular, lo que asegura un desarrollo modular y escalable.
-- **Diseño Responsive**: El diseño se adapta a cualquier dispositivo, ofreciendo una experiencia de usuario optimizada tanto en dispositivos móviles como en escritorio.
-- **Routeos dinámicos**: Navegación fluida entre las diferentes vistas de la aplicación, con routeos implementados para garantizar una estructura ordenada.
-- **Servicios (Services)**: Lógica del negocio gestionada a través de servicios reutilizables, lo que mejora la mantenibilidad del código.
-- **Características específicas (Features)**: Implementación de módulos y componentes separados para diferentes funcionalidades, manteniendo el código modular.
-- **Interfaz de Usuario (UI)**: Diseño moderno y atractivo, centrado en la experiencia del usuario.
+- **Firebase Cloud Database**: Firebase is used to securely manage and store data in the cloud.
+- **Authentication with Firebase Auth**: An authentication system implemented to protect private areas of the application.
+- **Frontend with Angular**: The application is developed using Angular, ensuring modular and scalable development.
+- **Responsive Design**: The design adapts to any device, providing an optimized user experience on both mobile and desktop.
+- **Dynamic Routing**: Smooth navigation between different views, with routing implemented to ensure an organized structure.
+- **Services**: Business logic is handled through reusable services, improving code maintainability.
+- **Specific Features**: Modules and components are separated for different functionalities, keeping the code modular.
+- **User Interface (UI)**: Modern and attractive design focused on the user experience.
 
-## Tecnologías utilizadas
+## Technologies Used
 
-- **Angular**: Framework para el desarrollo del frontend.
-- **Firebase**: Base de datos en la nube para almacenar y gestionar datos.
-- **HTML5 y CSS3**: Estructura y estilo de la aplicación.
-- **TypeScript**: Lenguaje principal utilizado en Angular.
-- **Bootstrap**: Utilizado para la creación de una interfaz responsive.
+- **Angular**: Framework for frontend development.
+- **Firebase**: Cloud-based database to store and manage data.
+- **HTML and CSS**: Used for structuring and styling the application.
+- **TypeScript**: The primary language used in Angular.
+- **Bootstrap**: Utilized to create a responsive interface.
 
-## Instalación y uso
+## Installation and Usage
 
-Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
+Follow these steps to clone and run the project locally:
 
-1. Clona este repositorio:
+1. Clone this repository:
     ```bash
     git clone https://github.com/TobiasMoreno/tasks-auth-angular.git
     ```
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
     ```bash
     cd tasks-auth-angular
     ```
 
-3. Instala las dependencias:
+3. Install the dependencies:
     ```bash
     npm install
     ```
 
-4. Inicia la aplicación:
+4. Start the application:
     ```bash
     ng serve
     ```
 
-5. Abre la aplicación en tu navegador en `http://localhost:4200/`.
+5. Open the application in your browser at `http://localhost:4200/`.
 
-## Estructura del proyecto
+## Project Structure
 
 ```plaintext
 public/
-├──  assets/                # Recursos estáticos
+├──  assets/                # Static resources
 |
 src/
 │
 ├── app/
-│   ├── auth/  
-│       ├── data-access/    
-│       ├── features/  
-│       ├── ui/        
+│   ├── auth/               # Authentication module
+│   │    ├── data-access/   # Business logic through services
+│   │    ├── features/      # Specific modules and components
+│   │    ├── ui/            # User interface components
 │   ├── core/          
-│   ├── shared/   
-│   ├── tasks/                
+│   ├── shared/ 
+│   │    ├── data-access/    
+│   │    ├── header/  
+│   │    ├── ui/ 
+│   ├── tasks/  
+│   │    ├── data-access/    
+│   │    ├── header/  
 │   ├── app.component.ts
 │   
-├── environments/
-└── styles.css             # Estilos globales
+├── environments/          # Environment configurations (development, production)
+└── styles.css             # Global styles
