@@ -1,4 +1,4 @@
-# Proyecto Personal - Aplicación Web con Angular y Firebase
+# Proyecto Personal - Aplicación Web con Angular, Firebase y Manejo de Usuarios
 
 Este es un proyecto personal desarrollado con **Angular** como frontend y **Firebase** como base de datos en la nube. La aplicación es completamente **responsive**, automatizada y sigue buenas prácticas de desarrollo mediante el uso de **routeos**, **servicios (services)**, **características específicas (features)**, y **una interfaz de usuario moderna (UI)**.
 
@@ -26,12 +26,12 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 
 1. Clona este repositorio:
     ```bash
-    git clone https://github.com/usuario/proyecto-angular-firebase.git
+    git clone https://github.com/TobiasMoreno/tasks-auth-angular.git
     ```
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd proyecto-angular-firebase
+    cd tasks-auth-angular
     ```
 
 3. Instala las dependencias:
@@ -64,5 +64,5 @@ src/
 │   ├── tasks/                
 │   ├── app.component.ts
 │   
-│
+├── environments/
 └── styles.css             # Estilos globales
